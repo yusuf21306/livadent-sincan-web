@@ -112,12 +112,12 @@ const DOCTORS_DATA = [
  * Doğrulanmış, Hastasız ve Klinik Ortamını Yansıtan Görsel Kaynakları
  */
 const CLINIC_IMAGES = {
-  room1: "assets/sincan/klinik-1.jpg",
-  room2: "assets/sincan/klinik-2.jpg",
-  unit1: "assets/sincan/rontgen.jpg",
-  unit2: "assets/sincan/resepsiyon.jpg",
-  clinic3: "assets/sincan/dis-cephe.jpg",
-  clinic4: "assets/sincan/bina-giris.jpg"
+  room1: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
+  room2: "https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&fit=crop&w=1000&q=80",
+  unit1: "https://images.unsplash.com/photo-1643660527098-559f89e45a92?auto=format&fit=crop&w=1000&q=80",
+  unit2: "https://images.unsplash.com/photo-1757767503913-8e6025b793a5?auto=format&fit=crop&w=1000&q=80",
+  clinic3: "https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&w=1000&q=80",
+  clinic4: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80"
 };
 
 /**
