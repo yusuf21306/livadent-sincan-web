@@ -465,10 +465,15 @@ ul {
 }
 
 .brand__logo {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
-  filter: drop-shadow(0 4px 12px rgba(16, 185, 129, 0.28));
+  filter: drop-shadow(0 6px 16px rgba(16, 185, 129, 0.36));
+}
+
+.livadent-italic {
+  font-style: italic;
+  letter-spacing: 0.03em;
 }
 
 .brand__text {
@@ -1866,6 +1871,23 @@ ul {
   font-size: 0.84rem;
   color: var(--text-muted);
   text-align: center;
+}
+
+.empty-roster-state {
+  grid-column: 1 / -1;
+  background: var(--silver-50);
+  border: 1px dashed var(--silver-300);
+  border-radius: var(--radius-md);
+  padding: 36px 24px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.empty-roster-state strong {
+  display: block;
+  color: var(--obsidian-900);
+  font-size: 1.04rem;
+  margin-bottom: 6px;
 }
 
 /* ==========================================================================

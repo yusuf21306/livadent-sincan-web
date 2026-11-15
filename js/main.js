@@ -49,62 +49,74 @@ const DOCTORS_DATA = [
     id: "sincan-1",
     branch: "sincan",
     branchLabel: "Sincan Şubesi",
-    initials: "TK",
-    roleBadge: "Kurucu & Mesul Müdür",
-    name: "Dt. Tuğçe Nur Kulen Çakmak",
-    title: "Kurucu Diş Hekimi & Editör",
-    university: "Diş Hekimliği Fakültesi Mezunu (Bilgi güncellenecektir)",
-    scope: "Genel Diş Hekimliği, Oral Diagnoz, Koruyucu ve Restoratif Uygulamalar, Endodonti, Protetik Tedaviler",
-    hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü"
+    initials: "SÇ",
+    roleBadge: "Kurucu Hekim",
+    name: "Dt. Sinan Can Çakmak (Kurucu)",
+    title: "Kurucu Diş Hekimi",
+    university: "Aydın Adnan Menderes Üniversitesi Diş Hekimliği Fakültesi Mezunu",
+    scope: "İlgilendiği Alanlar: Cerrahi İşlemler, Dental İmplant Uygulamaları, Gömülü 20 Yaş Dişi Çekimleri ve Genel Diş Hekimliği",
+    hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü",
+    onlineUrl: "https://www.doktorsitesi.com/sinan-can-cakmak/dis-hekimi/ankara"
   },
   {
     id: "sincan-2",
     branch: "sincan",
     branchLabel: "Sincan Şubesi",
-    initials: "SÇ",
-    roleBadge: "Kurucu Hekim",
-    name: "Dt. Sinan Can Çakmak",
-    title: "Kurucu Diş Hekimi",
+    initials: "TK",
+    roleBadge: "Mesul Müdür",
+    name: "Dt. Tuğçe Nur Kulen Çakmak",
+    title: "Mesul Müdür & Diş Hekimi",
     university: "Diş Hekimliği Fakültesi Mezunu",
-    scope: "Genel Diş Hekimliği, Restoratif Dolgu, Endodonti, Protetik ve Cerrahi Uygulamalar",
-    hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü",
-    onlineUrl: "https://www.doktorsitesi.com/sinan-can-cakmak/dis-hekimi/ankara"
+    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği ve Biyomimetik Diş Hekimliği Uygulamaları",
+    hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü"
   },
   {
     id: "sincan-3",
     branch: "sincan",
     branchLabel: "Sincan Şubesi",
-    initials: "DH",
-    roleBadge: "Sincan Kadrosu",
-    name: "Dt. [Sincan 3. Hekim Adı Soyadı]",
+    initials: "MG",
+    roleBadge: "Diş Hekimi",
+    name: "Dt. Melike Gümüş",
     title: "Diş Hekimi",
-    university: "Diş Hekimliği Fakültesi Mezunu (Kadro bilgisi eklenecektir)",
-    scope: "Genel Diş Hekimliği, Cerrahi Diş Çekimi, Protetik Uygulamalar ve Koruyucu Bakım",
+    university: "Diş Hekimliği Fakültesi Mezunu",
+    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği ve Biyomimetik Diş Hekimliği Uygulamaları",
     hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü"
   },
   {
-    id: "kazan-1",
-    branch: "kazan",
-    branchLabel: "Kahramankazan Şubesi",
-    initials: "DH",
-    roleBadge: "Kahramankazan Kadrosu",
-    name: "Dt. [Kahramankazan 1. Hekim Adı Soyadı]",
-    title: "Diş Hekimi",
-    university: "Diş Hekimliği Fakültesi Mezunu (Kadro bilgisi eklenecektir)",
-    scope: "Genel Diş Hekimliği, Oral Diagnoz, Restoratif Dolgu, Kanal Tedavisi ve Diş Eti Bakımı",
-    hours: "Pzt – Cmt: 09:00 – 19:00 aralığında planlı hasta kabulü"
+    id: "sincan-4",
+    branch: "sincan",
+    branchLabel: "Sincan Şubesi",
+    initials: "SE",
+    roleBadge: "Asistan",
+    name: "Sudenaz Erdoğdu",
+    title: "Ağız ve Diş Sağlığı Asistanı",
+    university: "Klinik Destek Ekibi",
+    scope: "Hekim Asistanlığı, Sterilizasyon ve Enfeksiyon Kontrol Süreçleri, Hasta Koordinasyonu",
+    hours: "Sincan Şubesi Klinik Destek Ekibi"
   },
   {
-    id: "kazan-2",
-    branch: "kazan",
-    branchLabel: "Kahramankazan Şubesi",
-    initials: "DH",
-    roleBadge: "Kahramankazan Kadrosu",
-    name: "Dt. [Kahramankazan 2. Hekim Adı Soyadı]",
-    title: "Diş Hekimi",
-    university: "Diş Hekimliği Fakültesi Mezunu (Kadro bilgisi eklenecektir)",
-    scope: "Genel Diş Hekimliği, Çocuk Ağız Sağlığı Uygulamaları, Protetik ve Cerrahi İşlemler",
-    hours: "Pzt – Cmt: 09:00 – 19:00 aralığında planlı hasta kabulü"
+    id: "sincan-5",
+    branch: "sincan",
+    branchLabel: "Sincan Şubesi",
+    initials: "TK",
+    roleBadge: "Asistan",
+    name: "Tuğba Kılıçkalkan",
+    title: "Ağız ve Diş Sağlığı Asistanı",
+    university: "Klinik Destek Ekibi",
+    scope: "Hekim Asistanlığı, Sterilizasyon ve Enfeksiyon Kontrol Süreçleri, Hasta Koordinasyonu",
+    hours: "Sincan Şubesi Klinik Destek Ekibi"
+  },
+  {
+    id: "sincan-6",
+    branch: "sincan",
+    branchLabel: "Sincan Şubesi",
+    initials: "SÖ",
+    roleBadge: "Asistan",
+    name: "Sonay Özsoy",
+    title: "Ağız ve Diş Sağlığı Asistanı",
+    university: "Klinik Destek Ekibi",
+    scope: "Hekim Asistanlığı, Sterilizasyon ve Enfeksiyon Kontrol Süreçleri, Hasta Koordinasyonu",
+    hours: "Sincan Şubesi Klinik Destek Ekibi"
   }
 ];
 
@@ -241,7 +253,7 @@ const TREATMENTS_DATA = [
     ],
     process: [
       "Klinik muayene ve oklüzyon analizi sonrası protez planının oluşturulması",
-      "Diş hazırlığı ve hassas ölçü alma işlemlerinin tamamlanması",
+      "Diş hazırlığı ve konforlu dijital ölçü (3B ağız içi tarama) ile hassas ölçü alma işlemlerinin tamamlanması",
       "Altyapı ve estetik provalar sonrası sabit restorasyonun yapıştırılması"
     ],
     aftercare: [
@@ -425,6 +437,11 @@ const FAQ_DATA = [
     question: "Sincan ve Kahramankazan şubelerinizin çalışma saatleri nelerdir?",
     answer:
       "Özel Livadent Sincan Şubemiz Pazartesi–Cumartesi günleri 09:00–22:00 saatleri arasında; Kahramankazan Şubemiz ise Pazartesi–Cumartesi günleri 09:00–19:00 saatleri arasında hizmet vermektedir. Şubelerimiz Pazar günleri kapalıdır."
+  },
+  {
+    question: "Kliniklerde dijital ölçü (3B ağız içi tarama) imkânı bulunuyor mu?",
+    answer:
+      "Evet. Polikliniklerimizde geleneksel ölçü kaşığı ve ölçü maddelerinin oluşturabildiği bulantı refleksi ve rahatsızlık hissini ortadan kaldıran dijital ölçü imkânı bulunmaktadır. 3 boyutlu ağız içi tarama ile protetik planlamalar çok daha konforlu, hızlı ve hassas biçimde gerçekleştirilebilmektedir."
   },
   {
     question: "Rutin ağız ve diş sağlığı kontrolü hangi sıklıkla yapılmalıdır?",
@@ -732,6 +749,16 @@ function renderDoctors(branchFilter) {
     branchFilter === "tumu"
       ? DOCTORS_DATA
       : DOCTORS_DATA.filter((d) => d.branch === branchFilter);
+
+  if (!list.length) {
+    container.innerHTML = `
+      <div class="empty-roster-state" role="status">
+        <strong>Kahramankazan Şubesi Ekip Bilgileri Yakında Eklenecektir</strong>
+        <span>Şubemize ilişkin randevu ve bilgilendirme talepleriniz için <a href="tel:+905421018786" style="color: var(--emerald-700); font-weight: 700; text-decoration: underline;">+90 542 101 87 86</a> numaralı hattımızdan bize ulaşabilirsiniz.</span>
+      </div>
+    `;
+    return;
+  }
 
   container.innerHTML = list
     .map((doc) => {
