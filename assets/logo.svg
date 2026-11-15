@@ -88,16 +88,16 @@
   <!-- Delicate Divider Hairline -->
   <line x1="28" y1="88.5" x2="92" y2="88.5" stroke="url(#platinumBezel)" stroke-opacity="0.38" stroke-width="0.9" />
 
-  <!-- Italic Luxury Brand Signature -->
+  <!-- Bold Italic Luxury Brand Signature -->
   <text
     x="60"
-    y="101.5"
+    y="102"
     text-anchor="middle"
     fill="url(#platinumTooth)"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="11.2"
+    font-family="'Plus Jakarta Sans', 'Montserrat', 'Segoe UI', Arial, sans-serif"
+    font-size="13.2"
     font-style="italic"
-    font-weight="700"
-    letter-spacing="1.9"
+    font-weight="800"
+    letter-spacing="1.6"
   >LİVADENT</text>
 </svg>
