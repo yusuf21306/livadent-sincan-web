@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="livadent-logo-title livadent-logo-desc">
-  <title id="livadent-logo-title">Özel livaDENT Ağız ve Diş Sağlığı Poliklinikleri Logosu</title>
-  <desc id="livadent-logo-desc">Obsidiyen siyah, zümrüt yeşili ve platin gümüş tonlarında sonsuzluk kurdeleli lüks diş amblemi ve livaDENT yazısı.</desc>
+  <title id="livadent-logo-title">Özel LİVADENT Ağız ve Diş Sağlığı Poliklinikleri Logosu</title>
+  <desc id="livadent-logo-desc">Obsidiyen siyah, zümrüt yeşili ve platin gümüş tonlarında sonsuzluk kurdeleli lüks diş amblemi ve LİVADENT yazısı.</desc>
   <defs>
     <radialGradient id="obsidianGlow" cx="50%" cy="35%" r="65%">
       <stop offset="0%" stop-color="#112922" />
@@ -105,5 +105,5 @@
     font-style="normal"
     font-weight="800"
     letter-spacing="1.2"
-  >livaDENT</text>
+  >LİVADENT</text>
 </svg>

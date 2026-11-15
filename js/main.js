@@ -67,7 +67,7 @@ const DOCTORS_DATA = [
     name: "Dt. Tuğçe Nur Kulen Çakmak",
     title: "Mesul Müdür & Diş Hekimi",
     university: "Necmettin Erbakan Üniversitesi Diş Hekimliği Fakültesi Mezunu",
-    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği ve Biyomimetik Diş Hekimliği Uygulamaları",
+    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği, Biyomimetik ve Estetik Diş Hekimliği Uygulamaları",
     hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü"
   },
   {
@@ -79,7 +79,7 @@ const DOCTORS_DATA = [
     name: "Dt. Melike Gümüş",
     title: "Diş Hekimi",
     university: "Hacettepe Üniversitesi Diş Hekimliği Fakültesi Mezunu",
-    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği ve Biyomimetik Diş Hekimliği Uygulamaları",
+    scope: "İlgilendiği Alanlar: Genel Diş Hekimliği, Biyomimetik ve Estetik Diş Hekimliği Uygulamaları",
     hours: "Pzt – Cmt: 09:00 – 22:00 aralığında planlı hasta kabulü"
   },
   {
