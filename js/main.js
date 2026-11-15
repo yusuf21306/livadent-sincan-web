@@ -484,30 +484,6 @@ const LEGAL_DOCS = {
       <p>Web sitesinde yer alan tüm tıbbi bilgilendirme içerikleri düzenli olarak kontrol edilmektedir. <strong>Son Güncelleme Tarihi: ${CLINIC_CONFIG.lastUpdated}</strong></p>
     `
   },
-  "hasta-haklari": {
-    meta: "T.C. Sağlık Bakanlığı Hasta Hakları Yönetmeliği",
-    title: "Hasta Hakları ve Sorumlulukları",
-    body: `
-      <h4>Temel Hasta Hakları</h4>
-      <ul>
-        <li><strong>Hizmetten Genel Olarak Faydalanma:</strong> Adalet ve hakkaniyet ilkeleri çerçevesinde koruyucu ve tedavi edici ağız ve diş sağlığı hizmetlerinden yararlanma hakkı.</li>
-        <li><strong>Bilgilendirme ve Bilgi İsteme:</strong> Sağlık durumu, uygulanacak tıbbi işlemlerin kapsamı, olası riskleri ve alternatifleri hakkında anlaşılır şekilde bilgi alma hakkı.</li>
-        <li><strong>Hekim Seçme ve Değiştirme:</strong> Sincan ve Kahramankazan şubelerimizde görev yapan diş hekimlerini tanıma, hekim seçme ve talep halinde değiştirme hakkı.</li>
-        <li><strong>Mahremiyet ve Gizlilik:</strong> Muayene ve kayıt süreçlerinin gizlilik içinde yürütülmesi ve verilerin kanuni zorunluluklar dışında paylaşılmaması hakkı.</li>
-        <li><strong>Aydınlatılmış Onam:</strong> Tıbbi girişimler öncesinde bilgilendirilmiş açık onam verme veya tedaviyi reddetme hakkı.</li>
-      </ul>
-
-      <h4>Hasta Sorumlulukları</h4>
-      <ul>
-        <li>Sistemik hastalıklarını, kullandığı ilaçları ve alerji öyküsünü diş hekimine eksiksiz bildirmek.</li>
-        <li>Randevu saatlerine uymak, gelemeyeceği durumlarda şubeyi önceden bilgilendirmek.</li>
-        <li>Tedavi sonrası bakım ve kontrol talimatlarına özen göstermek.</li>
-      </ul>
-
-      <h4>Başvuru ve Şikayet Mercileri</h4>
-      <p>Görüş ve başvurularınızı Mesul Müdürümüz <strong>${CLINIC_CONFIG.responsibleManager}</strong>’a (<a href="mailto:${CLINIC_CONFIG.email}">${CLINIC_CONFIG.email}</a>) iletebilir; ayrıca T.C. Sağlık Bakanlığı İletişim Merkezi <strong>SABİM Alo 184</strong> hattı veya Ankara İl Sağlık Müdürlüğü Hasta Hakları Birimi üzerinden resmi başvuru yapabilirsiniz.</p>
-    `
-  },
   kvkk: {
     meta: "6698 Sayılı Kişisel Verilerin Korunması Kanunu",
     title: "KVKK Aydınlatma Metni",
