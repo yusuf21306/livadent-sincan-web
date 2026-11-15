@@ -7,7 +7,6 @@
 
 const CLINIC_CONFIG = {
   brandName: "Özel Livadent Ağız ve Diş Sağlığı Poliklinikleri",
-  tradeName: "Kulen Ağız ve Diş Sağlığı Hizmetleri Ticaret Limited Şirketi",
   responsibleManager: "Dt. Tuğçe Nur Kulen Çakmak",
   webEditor: "Dt. Tuğçe Nur Kulen Çakmak",
   email: "dentliva@gmail.com",
@@ -19,6 +18,7 @@ const CLINIC_CONFIG = {
       key: "sincan",
       shortName: "Sincan Şubesi",
       officialName: "Özel Livadent Sincan Ağız ve Diş Sağlığı Polikliniği",
+      tradeName: "Kulen Ağız ve Diş Sağlığı Hizmetleri Ticaret Limited Şirketi",
       address: "Gökçek Mahallesi, 352. Sokak No:1/2 (Törekent / GOP Metro Durağı Yakını), 06930 Sincan / Ankara",
       phoneDisplay: "+90 545 339 32 86",
       phoneHref: "+905453393286",
@@ -39,7 +39,7 @@ const CLINIC_CONFIG = {
 };
 
 /**
- * Hekim Kadrosu Verisi (Toplam 5 Hekim: 3 Sincan Şubesi + 2 Kahramankazan Şubesi)
+ * Hekim Kadrosu Verisi (Sincan Şubesi & Kahramankazan Şubesi)
  * NOT: Yeni hekim isimleri ve mezuniyet bilgileri eklendiğinde ilgili satırları
  * güncellemeniz yeterlidir. 1219 sayılı Kanun gereği yalnızca tescilli resmi unvan
  * ("Dt." / Diş Hekimi) kullanılmaktadır.
@@ -109,26 +109,32 @@ const DOCTORS_DATA = [
 ];
 
 /**
- * Doğrulanmış, Hastasız ve Klinik Ortamını Yansıtan Görsel Kaynakları
+ * Tedavi Konularına Özel Doğrulanmış Görsel Kaynakları (Klinik Fotoğrafı Değil)
  */
-const CLINIC_IMAGES = {
-  room1: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1000&q=80",
-  room2: "https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&fit=crop&w=1000&q=80",
-  unit1: "https://images.unsplash.com/photo-1643660527098-559f89e45a92?auto=format&fit=crop&w=1000&q=80",
-  unit2: "https://images.unsplash.com/photo-1757767503913-8e6025b793a5?auto=format&fit=crop&w=1000&q=80",
-  clinic3: "https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&w=1000&q=80",
-  clinic4: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80"
+const TREATMENT_IMAGES = {
+  oralDiagnoz: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1000&q=80",
+  dentalImplant: "https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&fit=crop&w=1000&q=80",
+  cokluImplant: "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=80",
+  kanalTedavisi: "https://images.unsplash.com/photo-1588776813677-77aaf5595b83?auto=format&fit=crop&w=1000&q=80",
+  zirkonyumKuron: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=1000&q=80",
+  hareketliProtez: "https://images.unsplash.com/photo-1564420228450-d9a5bc8d6565?auto=format&fit=crop&w=1000&q=80",
+  disEtiTedavisi: "https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1000&q=80",
+  disTasiTemizligi: "https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?auto=format&fit=crop&w=1000&q=80",
+  restoratifDolgu: "https://images.unsplash.com/photo-1606811951341-756fdd437682?auto=format&fit=crop&w=1000&q=80",
+  cocukPedodonti: "https://images.unsplash.com/photo-1609840112855-9ab5ad8f66e4?auto=format&fit=crop&w=1000&q=80",
+  fissurFlorur: "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?auto=format&fit=crop&w=1000&q=80",
+  ortodontiCerrahi: "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1000&q=80"
 };
 
 /**
- * Sağlığı Koruyucu Tıbbi Bilgilendirme Başlıkları (12 Rehber)
+ * Sağlığı Koruyucu Tıbbi Bilgilendirme Başlıkları
  */
 const TREATMENTS_DATA = [
   {
     id: "oral-diagnoz",
     category: "genel-kanal",
     categoryLabel: "Genel & Tanı",
-    image: CLINIC_IMAGES.room1,
+    image: TREATMENT_IMAGES.oralDiagnoz,
     title: "Oral Diagnoz ve Tanısal Radyoloji (İlk Muayene)",
     summary: "Ağız içi dokuların, dişlerin ve çene kemiklerinin klinik muayene ve radyografik görüntüleme ile değerlendirilmesi sürecidir.",
     overview:
@@ -152,7 +158,7 @@ const TREATMENTS_DATA = [
     id: "dental-implant",
     category: "implant-cerrahi",
     categoryLabel: "İmplant & Cerrahi",
-    image: CLINIC_IMAGES.unit1,
+    image: TREATMENT_IMAGES.dentalImplant,
     title: "Dental İmplant Uygulamaları Hakkında Bilgilendirme",
     summary: "Eksik dişlerin fonksiyon ve görünümünü desteklemek amacıyla çene kemiğine yerleştirilen biyouyumlu titanyum kök yapılarıdır.",
     overview:
@@ -176,7 +182,7 @@ const TREATMENTS_DATA = [
     id: "coklu-tam-implant",
     category: "implant-cerrahi",
     categoryLabel: "İmplant & Cerrahi",
-    image: CLINIC_IMAGES.unit2,
+    image: TREATMENT_IMAGES.cokluImplant,
     title: "Çoklu İmplant ve Tam Çene Protez Planlaması",
     summary: "Birden fazla diş kaybı veya tam dişsizlik durumlarında sabit veya destekli protez oluşturmaya yönelik klinik değerlendirme süreçleridir.",
     overview:
@@ -199,7 +205,7 @@ const TREATMENTS_DATA = [
     id: "kanal-tedavisi",
     category: "genel-kanal",
     categoryLabel: "Endodonti",
-    image: CLINIC_IMAGES.room2,
+    image: TREATMENT_IMAGES.kanalTedavisi,
     title: "Endodonti (Kök Kanal Tedavisi Uygulamaları)",
     summary: "Dişin içindeki sinir ve damar dokusunun (pulpa) iltihaplanması durumunda dişin ağızda korunmasına yönelik tedavi yöntemidir.",
     overview:
@@ -223,7 +229,7 @@ const TREATMENTS_DATA = [
     id: "zirkonyum-kuron",
     category: "protez-diseti",
     categoryLabel: "Protetik Tedavi",
-    image: CLINIC_IMAGES.clinic3,
+    image: TREATMENT_IMAGES.zirkonyumKuron,
     title: "Protetik Diş Tedavisi (Zirkonyum ve Porselen Kuronlar)",
     summary: "Madde kaybına uğramış dişlerin korunması veya eksik diş boşluklarının tamamlanması amacıyla uygulanan sabit kaplama ve köprülerdir.",
     overview:
@@ -247,7 +253,7 @@ const TREATMENTS_DATA = [
     id: "hareketli-protez",
     category: "protez-diseti",
     categoryLabel: "Protetik Tedavi",
-    image: CLINIC_IMAGES.clinic4,
+    image: TREATMENT_IMAGES.hareketliProtez,
     title: "Tam ve Bölümlü Hareketli Protez Uygulamaları",
     summary: "Çok sayıda diş eksikliğinde çiğneme ve konuşma fonksiyonlarını desteklemek üzere hasta tarafından takılıp çıkarılabilen protezlerdir.",
     overview:
@@ -270,7 +276,7 @@ const TREATMENTS_DATA = [
     id: "dis-eti-tedavisi",
     category: "protez-diseti",
     categoryLabel: "Periodontoloji",
-    image: CLINIC_IMAGES.room1,
+    image: TREATMENT_IMAGES.disEtiTedavisi,
     title: "Periodontoloji (Diş Eti Hastalıkları, Küretaj ve Bakım)",
     summary: "Diş eti kanaması, diş eti iltihabı (gingivitis) ve destek kemik dokusunu etkileyen periodontal hastalıkların değerlendirilmesi ve tedavisidir.",
     overview:
@@ -294,7 +300,7 @@ const TREATMENTS_DATA = [
     id: "dis-tasi-temizligi",
     category: "genel-kanal",
     categoryLabel: "Koruyucu Bakım",
-    image: CLINIC_IMAGES.unit1,
+    image: TREATMENT_IMAGES.disTasiTemizligi,
     title: "Diş Taşı Temizliği (Detertraj) ve Yüzey Polisajı",
     summary: "Diş yüzeyinde sertleşmiş plak ve tartar birikimlerinin ultrasonik cihazlar ve el aletleriyle uzaklaştırılması işlemidir.",
     overview:
@@ -318,7 +324,7 @@ const TREATMENTS_DATA = [
     id: "restoratif-dolgu",
     category: "genel-kanal",
     categoryLabel: "Restoratif",
-    image: CLINIC_IMAGES.room2,
+    image: TREATMENT_IMAGES.restoratifDolgu,
     title: "Restoratif Diş Dolgusu Uygulamaları",
     summary: "Çürük dokuların temizlenmesinin ardından dişin anatomik formunu ve çiğneme fonksiyonunu geri kazandıran dolgu işlemleridir.",
     overview:
@@ -342,7 +348,7 @@ const TREATMENTS_DATA = [
     id: "cocuk-pedodonti",
     category: "cocuk-ortodonti",
     categoryLabel: "Pedodonti",
-    image: CLINIC_IMAGES.unit2,
+    image: TREATMENT_IMAGES.cocukPedodonti,
     title: "Çocuk Ağız ve Diş Sağlığı (Süt Dişi Tedavileri)",
     summary: "Çocukluk çağında süt dişlerinin ve yeni süren daimi dişlerin çürükten korunması ile tedavisini kapsayan uygulamalardır.",
     overview:
@@ -366,7 +372,7 @@ const TREATMENTS_DATA = [
     id: "fissur-florur",
     category: "cocuk-ortodonti",
     categoryLabel: "Koruyucu Uygulama",
-    image: CLINIC_IMAGES.clinic3,
+    image: TREATMENT_IMAGES.fissurFlorur,
     title: "Fissür Örtücü ve Topikal Florür Uygulamaları",
     summary: "Çürük riski yüksek çocuklarda ve yeni süren azı dişlerinde mineyi güçlendirmeye ve olukları korumaya yönelik aşındırma gerektirmeyen koruyucu işlemlerdir.",
     overview:
@@ -389,7 +395,7 @@ const TREATMENTS_DATA = [
     id: "ortodonti-cerrahi",
     category: "cocuk-ortodonti",
     categoryLabel: "Ortodonti & Cerrahi",
-    image: CLINIC_IMAGES.clinic4,
+    image: TREATMENT_IMAGES.ortodontiCerrahi,
     title: "Ortodontik Değerlendirme ve Gömülü 20 Yaş Dişi Çekimleri",
     summary: "Diş ve çene kapanış düzensizliklerinin (tel / şeffaf plak) değerlendirilmesi ile gömülü dişlerin cerrahi olarak alınması süreçleridir.",
     overview:
@@ -418,7 +424,7 @@ const FAQ_DATA = [
   {
     question: "Sincan ve Kahramankazan şubelerinizin çalışma saatleri nelerdir?",
     answer:
-      "Özel Livadent Sincan Şubemiz Pazartesi–Cumartesi günleri 09:00–22:00 saatleri arasında; Kahramankazan Şubemiz ise Pazartesi–Cumartesi günleri 09:00–19:00 saatleri arasında hizmet vermektedir. Her iki şubemiz de Pazar günleri kapalıdır."
+      "Özel Livadent Sincan Şubemiz Pazartesi–Cumartesi günleri 09:00–22:00 saatleri arasında; Kahramankazan Şubemiz ise Pazartesi–Cumartesi günleri 09:00–19:00 saatleri arasında hizmet vermektedir. Şubelerimiz Pazar günleri kapalıdır."
   },
   {
     question: "Rutin ağız ve diş sağlığı kontrolü hangi sıklıkla yapılmalıdır?",
@@ -455,12 +461,10 @@ const LEGAL_DOCS = {
     meta: "Kurumsal Bilgiler & 12 Kasım 2025 Yönetmeliği Uyumu",
     title: "Kurumsal Künye ve Ruhsat Bilgileri",
     body: `
-      <h4>1. Ticari Unvan (İşleten Şirket / Veri Sorumlusu)</h4>
-      <p><strong>${CLINIC_CONFIG.tradeName}</strong></p>
-
-      <h4>2. Ruhsatlı Sağlık Tesisi Şubelerimiz</h4>
+      <h4>1. Ruhsatlı Poliklinik Şubeleri ve Ticari Unvan Bilgisi</h4>
       <ul>
         <li><strong>${CLINIC_CONFIG.branches.sincan.officialName}</strong><br>
+        İşleten Ticari Unvan: <strong>${CLINIC_CONFIG.branches.sincan.tradeName}</strong><br>
         Adres: ${CLINIC_CONFIG.branches.sincan.address}<br>
         Tel: <a href="tel:${CLINIC_CONFIG.branches.sincan.phoneHref}">${CLINIC_CONFIG.branches.sincan.phoneDisplay}</a> | Çalışma Saatleri: ${CLINIC_CONFIG.branches.sincan.hours}</li>
         <li><strong>${CLINIC_CONFIG.branches.kazan.officialName}</strong><br>
@@ -468,19 +472,19 @@ const LEGAL_DOCS = {
         Tel: <a href="tel:${CLINIC_CONFIG.branches.kazan.phoneHref}">${CLINIC_CONFIG.branches.kazan.phoneDisplay}</a> | Çalışma Saatleri: ${CLINIC_CONFIG.branches.kazan.hours}</li>
       </ul>
 
-      <h4>3. Mesul Müdür ve İnternet Sitesi Editörü</h4>
+      <h4>2. Mesul Müdür ve İnternet Sitesi Editörü</h4>
       <p><strong>Mesul Müdür:</strong> ${CLINIC_CONFIG.responsibleManager}<br>
       <strong>İnternet Sitesi Editörü / Sorumlu Hekim:</strong> ${CLINIC_CONFIG.webEditor}<br>
       <strong>Editör E-posta &amp; İletişim:</strong> <a href="mailto:${CLINIC_CONFIG.email}">${CLINIC_CONFIG.email}</a> | <a href="tel:${CLINIC_CONFIG.branches.sincan.phoneHref}">${CLINIC_CONFIG.branches.sincan.phoneDisplay}</a></p>
 
-      <h4>4. Denetleyici İdari Kurum ve Meslek Örgütü</h4>
+      <h4>3. Denetleyici İdari Kurum ve Meslek Örgütü</h4>
       <ul>
         <li><strong>Denetleyici Kurum:</strong> ${CLINIC_CONFIG.supervisingAuthority}</li>
         <li><strong>Bağlı Olunan Meslek Örgütü:</strong> ${CLINIC_CONFIG.professionalChamber}</li>
         <li><strong>Mevzuat Dayanağı:</strong> 1219 sayılı Kanun, 3359 sayılı Sağlık Hizmetleri Temel Kanunu, Ağız ve Diş Sağlığı Hizmeti Sunulan Özel Sağlık Kuruluşları Hakkında Yönetmelik ve 12 Kasım 2025 tarihli (33075 sayılı R.G.) Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik.</li>
       </ul>
 
-      <h4>5. İçerik Güncellik Beyanı</h4>
+      <h4>4. İçerik Güncellik Beyanı</h4>
       <p>Web sitesinde yer alan tüm tıbbi bilgilendirme içerikleri düzenli olarak kontrol edilmektedir. <strong>Son Güncelleme Tarihi: ${CLINIC_CONFIG.lastUpdated}</strong></p>
     `
   },
@@ -489,7 +493,7 @@ const LEGAL_DOCS = {
     title: "KVKK Aydınlatma Metni",
     body: `
       <h4>1. Veri Sorumlusunun Kimliği</h4>
-      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca kişisel verileriniz ve özel nitelikli kişisel sağlık verileriniz, veri sorumlusu sıfatıyla <strong>${CLINIC_CONFIG.tradeName}</strong> (Sincan ve Kahramankazan Şubeleri) tarafından aşağıda açıklanan kapsamda işlenmektedir.</p>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) uyarınca kişisel verileriniz ve özel nitelikli kişisel sağlık verileriniz; başvuru yaptığınız şubeye göre <strong>${CLINIC_CONFIG.branches.sincan.officialName}</strong> (Ticari Unvan: <strong>${CLINIC_CONFIG.branches.sincan.tradeName}</strong>) veya <strong>${CLINIC_CONFIG.branches.kazan.officialName}</strong> tarafından veri sorumlusu sıfatıyla aşağıda açıklanan kapsamda işlenmektedir.</p>
 
       <h4>2. İşlenen Kişisel Veriler</h4>
       <p>Randevu veya bilgi talep formunu kullanmanız halinde; ad-soyad, telefon numarası, tercih edilen şube/saat bilgisi ile gönüllü olarak ilettiğiniz ağız ve diş sağlığı şikayeti/konu bilginiz (KVKK Madde 6 kapsamında özel nitelikli kişisel veri) işlenmektedir.</p>
@@ -509,7 +513,7 @@ const LEGAL_DOCS = {
     meta: "KVKK Madde 5 ve Madde 6 Uyarınca",
     title: "İletişim ve Randevu Talebi Açık Rıza Metni",
     body: `
-      <p><strong>${CLINIC_CONFIG.tradeName}</strong> (Sincan ve Kahramankazan Şubeleri) tarafından sunulan KVKK Aydınlatma Metni’ni okudum ve anladım.</p>
+      <p>Başvurduğum poliklinik birimi (<strong>${CLINIC_CONFIG.branches.sincan.officialName}</strong> — ${CLINIC_CONFIG.branches.sincan.tradeName} veya <strong>${CLINIC_CONFIG.branches.kazan.officialName}</strong>) tarafından sunulan KVKK Aydınlatma Metni’ni okudum ve anladım.</p>
       <p>Web sitesindeki formda paylaştığım ad-soyad, telefon numarası, seçtiğim şube, tercih edilen zaman ve varsa ağız sağlığı konuma ilişkin bilgilerin; yalnızca tarafıma randevu ve bilgilendirme dönüşü yapılması amacıyla işlenmesine ve seçtiğim şube iletişim kanalı (WhatsApp / e-posta / telefon) üzerinden iletişime geçilmesine <strong>özgür irademle açık rıza veriyorum</strong>.</p>
       <p>Açık rızamı dilediğim zaman <a href="mailto:${CLINIC_CONFIG.email}">${CLINIC_CONFIG.email}</a> adresine bildirerek geri çekebileceğimi biliyorum.</p>
     `
