@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="livadent-logo-title livadent-logo-desc">
+  <title id="livadent-logo-title">Özel Livadent Sincan Ağız ve Diş Sağlığı Polikliniği Logosu</title>
+  <desc id="livadent-logo-desc">Zümrüt yeşili, siyah ve gümüş tonlarında stilize diş ve yaprak motifli kurumsal poliklinik amblemi.</desc>
+  <defs>
+    <linearGradient id="obsidianBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#131D1A" />
+      <stop offset="100%" stop-color="#070A09" />
+    </linearGradient>
+    <linearGradient id="silverRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="45%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </linearGradient>
+    <linearGradient id="silverTooth" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="65%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#94A3B8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Geometric Crest -->
+  <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#obsidianBg)" stroke="url(#silverRing)" stroke-width="2.5" />
+  <rect x="12" y="12" width="96" height="96" rx="21" fill="none" stroke="#10B981" stroke-opacity="0.28" stroke-width="1" />
+
+  <!-- Subtle Emerald Aura -->
+  <circle cx="60" cy="58" r="34" fill="url(#emeraldGrad)" fill-opacity="0.14" />
+
+  <!-- Stylized Tooth Silhouette in Brushed Silver -->
+  <path
+    d="M41.5 34.5C35.2 34.5 31 40.1 31 47.2C31 55.3 34.8 61.5 36.8 69.8C38.6 77.3 40.3 86.5 44.8 86.5C48.3 86.5 50.1 77.6 52.8 73.1C55.1 69.3 57.5 68.2 60 68.2C62.5 68.2 64.9 69.3 67.2 73.1C69.9 77.6 71.7 86.5 75.2 86.5C79.7 86.5 81.4 77.3 83.2 69.8C85.2 61.5 89 55.3 89 47.2C89 40.1 84.8 34.5 78.5 34.5C72.2 34.5 66.2 38.4 60 38.4C53.8 38.4 47.8 34.5 41.5 34.5Z"
+    fill="none"
+    stroke="url(#silverTooth)"
+    stroke-width="3.6"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Emerald Vitality Leaf / Facet Curve inside Crest -->
+  <path
+    d="M60 38.4C64.2 38.4 69.5 35.5 74.8 35.1C71.5 43.4 65.5 50.2 57.2 54.4C51.6 57.2 44.5 58.1 38.6 56.2C43.2 48.2 51.2 38.4 60 38.4Z"
+    fill="url(#emeraldGrad)"
+    fill-opacity="0.92"
+  />
+
+  <!-- Minimalist Medical Cross / Precision Accent -->
+  <path d="M60 21V29M56 25H64" stroke="#34D399" stroke-width="2.2" stroke-linecap="round" />
+</svg>
