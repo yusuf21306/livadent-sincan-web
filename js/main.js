@@ -915,13 +915,13 @@ function closeModal(modalEl) {
   activeModalEl = null;
 }
 
-function openTreatmentModal(id) {
+function openTreatmentModal(id, customTitle) {
   const data = TREATMENTS_DATA.find((t) => t.id === id);
   if (!data) return;
 
   const modal = document.getElementById("info-modal");
   document.getElementById("info-modal-meta").textContent = `${data.categoryLabel} | Sağlığı Koruyucu Bilgilendirme`;
-  document.getElementById("info-modal-title").textContent = data.title;
+  document.getElementById("info-modal-title").textContent = customTitle || data.title;
   document.getElementById("info-modal-body").innerHTML = `
     <h4>Genel Tıbbi Bilgi</h4>
     <p>${data.overview}</p>
@@ -963,7 +963,10 @@ function initModals() {
 
   document.querySelectorAll("[data-open-treatment]").forEach((btn) => {
     btn.addEventListener("click", () => {
-      openTreatmentModal(btn.getAttribute("data-open-treatment"));
+      openTreatmentModal(
+        btn.getAttribute("data-open-treatment"),
+        btn.getAttribute("data-treatment-title")
+      );
     });
   });
 
@@ -980,7 +983,7 @@ function initModals() {
   });
 }
 
-/* Mobil Menü */
+/* Mobil Menü & Çok Kademeli Tedavi Alt Menüsü */
 function initMobileNav() {
   const toggleBtn = document.getElementById("mobile-toggle");
   const navEl = document.getElementById("main-nav");
@@ -991,10 +994,36 @@ function initMobileNav() {
     toggleBtn.setAttribute("aria-expanded", String(isOpen));
   });
 
-  navEl.querySelectorAll("a, button").forEach((el) => {
+  navEl.querySelectorAll(".sub-item-trigger").forEach((trigger) => {
+    trigger.addEventListener("click", (e) => {
+      const group = trigger.closest(".sub-item-group");
+      if (window.innerWidth <= 1180) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (!group) return;
+        const willOpen = !group.classList.contains("is-sub-open");
+        navEl.querySelectorAll(".sub-item-group.is-sub-open").forEach((other) => {
+          other.classList.remove("is-sub-open");
+        });
+        if (willOpen) {
+          group.classList.add("is-sub-open");
+        }
+      } else {
+        const defaultTreatment = trigger.getAttribute("data-default-treatment");
+        if (defaultTreatment) {
+          openTreatmentModal(defaultTreatment, trigger.querySelector("span")?.textContent?.trim());
+        }
+      }
+    });
+  });
+
+  navEl.querySelectorAll("a, button:not(.sub-item-trigger)").forEach((el) => {
     el.addEventListener("click", () => {
       navEl.classList.remove("is-open");
       toggleBtn.setAttribute("aria-expanded", "false");
+      navEl.querySelectorAll(".sub-item-group.is-sub-open").forEach((g) => {
+        g.classList.remove("is-sub-open");
+      });
     });
   });
 }

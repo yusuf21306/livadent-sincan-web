@@ -170,13 +170,104 @@
               <li class="nav-item has-children">
                 <a href="#blog-sec" class="nav-link">Tedaviler <span class="nav-plus">+</span></a>
                 <div class="sub-menu">
-                  <button type="button" data-open-treatment="oral-diagnoz">Oral Diagnoz ve Radyoloji</button>
-                  <button type="button" data-open-treatment="dental-implant">Dental İmplant Uygulamaları</button>
-                  <button type="button" data-open-treatment="kanal-tedavisi">Endodonti (Kanal Tedavisi)</button>
-                  <button type="button" data-open-treatment="zirkonyum-kuron">Zirkonyum ve Porselen Kuronlar</button>
-                  <button type="button" data-open-treatment="dis-eti-tedavisi">Periodontoloji (Diş Eti)</button>
-                  <button type="button" data-open-treatment="cocuk-pedodonti">Pedodonti (Çocuk Diş Sağlığı)</button>
-                  <button type="button" data-open-treatment="ortodonti-cerrahi">Ortodonti ve 20 Yaş Cerrahisi</button>
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="dental-implant">
+                      <span>İmplantoloji</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="dental-implant">Dental İmplant Uygulamaları</button>
+                      <button type="button" data-open-treatment="coklu-tam-implant" data-treatment-title="All-on-4 İmplant Tekniği ve Sabit Protez Planlaması">All-on-4 İmplant Tekniği</button>
+                      <button type="button" data-open-treatment="coklu-tam-implant" data-treatment-title="All-on-6 İmplant Tekniği ve Tam Çene Restorasyonu">All-on-6 İmplant Tekniği</button>
+                      <button type="button" data-open-treatment="dental-implant" data-treatment-title="Dikişsiz (Flapless) İmplant ve İleri İmplant Cerrahisi">Dikişsiz (Flapless) İmplant &amp; Kemik Cerrahisi</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="zirkonyum-kuron">
+                      <span>Protetik &amp; Estetik Diş Hekimliği</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="zirkonyum-kuron" data-treatment-title="Zirkonyum Destekli Estetik Kuron Kaplamalar">Zirkonyum Diş Kaplama</button>
+                      <button type="button" data-open-treatment="zirkonyum-kuron" data-treatment-title="Porselen Lamina (Yaprak Porselen) Uygulamaları">Porselen Lamina (Yaprak Porselen)</button>
+                      <button type="button" data-open-treatment="zirkonyum-kuron" data-treatment-title="E-Max ve Tam Seramik Kuron Restorasyonları">E-Max / Tam Seramik Kuronlar</button>
+                      <button type="button" data-open-treatment="zirkonyum-kuron" data-treatment-title="3 Boyutlu Dijital Ölçü ve CAD/CAM Destekli Planlama">3B Dijital Ölçü (Ağız İçi Tarama)</button>
+                      <button type="button" data-open-treatment="hareketli-protez">Hassas Tutuculu &amp; Hareketli Protezler</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="ortodonti-cerrahi">
+                      <span>Ağız, Diş ve Çene Cerrahisi</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="ortodonti-cerrahi" data-treatment-title="Gömülü 20 Yaş Dişi Cerrahi Çekimi">Gömülü 20 Yaş Dişi Çekimi</button>
+                      <button type="button" data-open-treatment="ortodonti-cerrahi" data-treatment-title="Cerrahi Diş Çekimi ve Apikal Rezeksiyon">Cerrahi Diş Çekimi &amp; Kök Ucu Rezeksiyonu</button>
+                      <button type="button" data-open-treatment="dental-implant" data-treatment-title="Sinüs Lifting ve Kemik Grefti (Kemik Tozu) Uygulamaları">Sinüs Lifting &amp; Kemik Grefti (Kemik Tozu)</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="kanal-tedavisi">
+                      <span>Endodonti &amp; Biyomimetik Restoratif</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="kanal-tedavisi">Kök Kanal Tedavisi (Endodonti)</button>
+                      <button type="button" data-open-treatment="kanal-tedavisi" data-treatment-title="Kanal Tedavisi Yenileme (Retreatment) ve Fiber Post">Kanal Yenileme (Retreatment) &amp; Fiber Post</button>
+                      <button type="button" data-open-treatment="restoratif-dolgu" data-treatment-title="Biyomimetik Diş Hekimliği ve Estetik Kompozit Dolgu">Biyomimetik &amp; Estetik Kompozit Dolgu</button>
+                      <button type="button" data-open-treatment="restoratif-dolgu" data-treatment-title="Inley ve Onley Adeziv Porselen Dolgu Restorasyonları">Inley / Onley Porselen Dolgu</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="dis-eti-tedavisi">
+                      <span>Periodontoloji (Diş Eti Tedavileri)</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="dis-tasi-temizligi">Diş Taşı Temizliği (Detertraj &amp; Polisaj)</button>
+                      <button type="button" data-open-treatment="dis-eti-tedavisi" data-treatment-title="Subgingival Küretaj ve Kök Yüzeyi Düzleştirme">Subgingival Küretaj (Derin Diş Eti Tedavisi)</button>
+                      <button type="button" data-open-treatment="dis-eti-tedavisi" data-treatment-title="Diş Eti Çekilmesi Takibi ve Gingivektomi (Pembe Estetik)">Diş Eti Çekilmesi &amp; Gingivektomi</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="ortodonti-cerrahi">
+                      <span>Ortodonti</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="ortodonti-cerrahi" data-treatment-title="Şeffaf Plak (Telsiz Ortodonti) Değerlendirmesi">Şeffaf Plak (Telsiz Ortodonti)</button>
+                      <button type="button" data-open-treatment="ortodonti-cerrahi" data-treatment-title="Sabit Metal ve Porselen Braket Uygulamaları">Metal ve Porselen Braket Tedavileri</button>
+                      <button type="button" data-open-treatment="ortodonti-cerrahi" data-treatment-title="Çocuk ve Yetişkinlerde Kapanış (Oklüzyon) Değerlendirmesi">Çene Gelişimi ve Kapanış Takibi</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="cocuk-pedodonti">
+                      <span>Pedodonti (Çocuk Diş Hekimliği)</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="cocuk-pedodonti">Süt Dişi Dolgusu ve Çocuk Kanal Tedavisi</button>
+                      <button type="button" data-open-treatment="fissur-florur">Fissür Örtücü (Diş Aşısı) &amp; Florür Uygulaması</button>
+                      <button type="button" data-open-treatment="cocuk-pedodonti" data-treatment-title="Erken Süt Dişi Kayıplarında Yer Tutucu Uygulamaları">Sabit ve Hareketli Yer Tutucular</button>
+                    </div>
+                  </div>
+
+                  <div class="sub-item-group">
+                    <button type="button" class="sub-item-trigger" data-default-treatment="oral-diagnoz">
+                      <span>Oral Diagnoz ve Radyoloji</span>
+                      <span class="sub-arrow" aria-hidden="true">&#8250;</span>
+                    </button>
+                    <div class="sub-menu-level2">
+                      <button type="button" data-open-treatment="oral-diagnoz">İlk Muayene ve Dijital Tedavi Planlaması</button>
+                      <button type="button" data-open-treatment="oral-diagnoz" data-treatment-title="Panoramik ve Periapikal Dijital Radyografi">Panoramik &amp; Periapikal Radyografi</button>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="nav-item has-children">
@@ -271,7 +362,7 @@
         </div>
 
         <div class="hero-slide-item">
-          <div class="slide-bg" style="background-image: url('assets/kazan/sube-kazan.jpg');"></div>
+          <div class="slide-bg" style="background-image: url('assets/sincan/sube-sincan.jpg');"></div>
           <div class="slide-overlay"></div>
           <div class="slide-data" style="display: none;">
             <span class="data-tag">Etik ve Koruyucu Yaklaşım</span>

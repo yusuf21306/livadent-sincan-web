@@ -592,12 +592,12 @@ ul {
   color: var(--emerald-400);
 }
 
-/* Açılır Alt Menü (Mega / Dropdown) */
+/* Açılır Alt Menü (Mega / Dropdown & Çok Kademeli Flyout) */
 .sub-menu {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 265px;
+  min-width: 285px;
   background: var(--obsidian-900);
   border: 1px solid rgba(203, 213, 225, 0.2);
   border-top: 2px solid var(--emerald-500);
@@ -623,6 +623,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
   width: 100%;
   text-align: left;
   padding: 9px 12px;
@@ -632,14 +633,69 @@ ul {
   color: var(--silver-200);
   font-size: 0.84rem;
   font-weight: 500;
+  cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
 }
 
 .sub-menu a:hover,
-.sub-menu button:hover {
+.sub-menu button:hover,
+.sub-item-group:hover > .sub-item-trigger,
+.sub-item-group:focus-within > .sub-item-trigger {
   background: rgba(16, 185, 129, 0.14);
   color: var(--emerald-400);
   padding-left: 16px;
+}
+
+.sub-item-group {
+  position: relative;
+}
+
+.sub-arrow {
+  font-size: 1.08rem;
+  line-height: 1;
+  color: var(--silver-400);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sub-item-group:hover > .sub-item-trigger .sub-arrow,
+.sub-item-group:focus-within > .sub-item-trigger .sub-arrow {
+  color: var(--emerald-400);
+  transform: translateX(3px);
+}
+
+.sub-menu-level2 {
+  position: absolute;
+  top: -8px;
+  left: calc(100% + 6px);
+  min-width: 295px;
+  background: var(--obsidian-900);
+  border: 1px solid rgba(203, 213, 225, 0.22);
+  border-left: 2px solid var(--emerald-500);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition: all 0.22s ease;
+  z-index: 1060;
+}
+
+/* Fare üst menüden sağdaki alt menüye geçerken kopmayı önleyen görünmez köprü */
+.sub-menu-level2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -12px;
+  width: 12px;
+}
+
+.sub-item-group:hover > .sub-menu-level2,
+.sub-item-group:focus-within > .sub-menu-level2 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
 }
 
 .header-actions {
@@ -2699,6 +2755,8 @@ ul {
 
   .sub-menu {
     position: static;
+    min-width: 0;
+    width: 100%;
     opacity: 1;
     visibility: visible;
     transform: none;
@@ -2714,6 +2772,36 @@ ul {
   .sub-menu button {
     padding: 10px 12px;
     font-size: 0.88rem;
+  }
+
+  .sub-menu-level2 {
+    position: static;
+    min-width: 0;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.03);
+    border: 0;
+    border-left: 2px dashed rgba(52, 211, 153, 0.45);
+    border-radius: 0;
+    margin: 2px 0 8px 10px;
+    padding: 4px 8px;
+    display: none;
+  }
+
+  .sub-menu-level2::before {
+    display: none;
+  }
+
+  .sub-item-group.is-sub-open > .sub-menu-level2 {
+    display: block;
+  }
+
+  .sub-item-group.is-sub-open > .sub-item-trigger .sub-arrow {
+    transform: rotate(90deg);
+    color: var(--emerald-400);
   }
 
   .mobile-nav-cta {
